@@ -1,0 +1,6 @@
+runtime: python39  # Choose your desired runtime
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
