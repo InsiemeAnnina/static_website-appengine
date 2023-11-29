@@ -1,6 +1,9 @@
 runtime: python39  # Choose your desired runtime
 
 handlers:
-  - url: /
-    static_files: index.html
-    upload: index.html
+  - url: /website
+    static_dir: website
+
+  - url: /.*
+    static_files: website/index.html
+    upload: website/index.html
